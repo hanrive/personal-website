@@ -1,0 +1,235 @@
+/* use of the .elements idea from https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image */
+.backgroundheader1 { /* the background image for the header on index.html*/
+	background-image: url("01_BG_ Panorama.jpg");
+	/* NO-REPEAT - background image is not repeated and only displayed once */
+	background-repeat: no-repeat; /* https://w3schools.com/css/css_background.asp, for css */
+	background-position: center top; /* https://w3schools.com/css/css_background.asp, for css */
+	/* FIXED - background image will not scroll with the page */
+	background-attachment: fixed; /* https://w3schools.com/css/css_background.asp, for css */
+	/* COVER - will resize the image to cover the entire container */
+	background-size: cover; /* https://w3schools.com/css/css_background.asp, for css */
+}
+
+.backgroundheader2 { /* the background image for the header on team.html*/
+	background-image: url("02_BG_Panorama.jpg");
+	/* NO-REPEAT - background image is not repeated and only displayed once */
+	background-repeat: no-repeat;
+	background-position: center top;
+	/* FIXED - background image will not scroll with the page */
+	background-attachment: fixed;
+	/* COVER - will resize the image to cover the entire container */
+	background-size: cover;
+}
+
+.header { /* the text styles for the header */
+	margin-top: 75px; /* margin top and left to offset it from the edge of the photo */
+	margin-left: 50px;
+	margin-right: 100px;
+	margin-bottom: 75px; /* to extend the height of the image */
+	/* display and padding add the background colour around the text to only be around the text */
+	display: inline-block; /* https://w3schools.com/css/css_inline-block.asp */
+	padding: 20px;
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	font-size: 1.5vw;
+	/* font family provide a series of font types as a 'fallback' incase a browser doesn't support the initial selected font, prefer Courier New but worst case the browser will choose it's own font in the monospace text family */
+	font-family: "Courier New", "Helvetica", monospace; /* https://w3schools.com/css/pr_font_font-family.php, for css */
+}
+
+/* https://www.youtube.com/watch?v=e5wjLZzMmYM, for css template but changed location, positioning type, added hover/active styling, and colours */
+ *,
+ *:before,
+ *:after{
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+ }
+ nav{
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 background-color: rgba(0, 0, 0, 0.6);
+	 position: sticky;
+	 top: 251px;
+	 padding: 15px 25px;
+	 font-size: 0.8vw;
+	 font-family: "Courier New", "Helvetica", monospace;
+	 backdrop-filter: blur(8px);
+	 box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+ }
+ ul{
+	 list-style: none;
+ }
+ li{
+	 display: inline-block;
+ }
+ li a{
+	 margin-left: 40px;
+	 
+ }
+nav a{
+	color: white;
+	letter-spacing: 1px;
+	text-decoration: none;
+	outline: none;
+ }
+nav a:hover{
+	background-color: black;
+	color: white;
+	padding: 15px 25px;
+}
+nav a:active{
+	background-color: #FFCCE5;
+	color: white;
+	padding: 15px 25px;
+}
+}
+
+/* https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14, for css */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	margin: 50px auto;
+	width: 70%;
+}
+
+/* Pfp from index.html */
+.wrapper .pfp {
+	max-width: 300px;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+}
+
+.wrapper .pfp_drawing1 {
+	max-width: 100px;
+	height: auto;
+	float: right;
+	margin-right: 200px;
+	margin-top: 250px;
+}
+
+.wrapper .text-box h1 { /* Body of text from index.html */
+	font-weight: bold;
+	color: black;
+	font-family: "Courier New", "Helvetica", monospace;
+}
+
+.wrapper .text-box h2 { /* Body of text from index.html */
+	color: black;
+	font-family: "Courier New", "Helvetica", monospace;
+	padding: 5px;
+}
+
+.wrapper .text-box h3 { /* Body of text from index.html */
+	color: black;
+	font-family: "Courier New", "Helvetica", monospace;
+	padding: 10px;
+}
+
+.wrapper .text-box h4 { /* Body of text from index.html */
+	color: black;
+	font-style: italic;
+	font-family: "Courier New", "Helvetica", monospace;
+}
+
+.wrapper .text-box p { /* Body of text from index.html */
+	color: #6e6e6e;
+	font-family: "Calibri", sans-serif;
+	padding: 2px;
+}
+
+.text_body { /* Body of text from team.html */
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* https://www.w3schools.com/howto/howto_css_images_side_by_side.asp, for css */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* end */
+
+.text_body {
+	font-family: "Courier New", "Helvetica", monospace;
+	font-size: 1.3vw;
+}
+
+.row .column img {
+	max-width: 100%;
+}
+
+.row .column h1 {
+	font-family: "Courier New", "Helvetica", monospace;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.row .column h2 {
+	font-family: "Courier New", "Helvetica", monospace;
+	color: black;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.row .column p {
+	color: #6e6e6e;
+	font-size: 1vw;
+	font-family: "Calibri", sans-serif;
+}
+
+.wrapper .text-box {
+	color: black;
+}
+
+.wrapper .text-box h1 {
+	font-size: 42 px;
+	font-family: "Courier New", "Helvetica", monospace;
+}
+
+.wrapper .text-box p {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+.pfp_drawing {
+	max-width: 100px;
+	float: right;
+	margin-right: 300px;
+}
+
+/* https://www.geeksforgeeks.org/how-to-create-links-to-sections-within-the-same-page-in-html/, for css */
+.disclaimer  {
+	height: 15vh; /* Height of the overall section */
+	background-color: rgba(0, 0, 0, 0.6);
+	border: rgba(0, 0, 0, 0.6);
+	color: white;
+	font-family: "Courier New", "Helvetica", monospace;
+	font-size: 15px;
+	text-align: left;
+	padding: 30px; /* To create space from the edges of the border and the text */
+	margin-top: 100px; /* To give a specified separation from the above text */
+}

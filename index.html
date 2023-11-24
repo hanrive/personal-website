@@ -1,0 +1,121 @@
+<!-- 
+"Choose any three (3) from the following six (6) items below:"
+I did option 2, 3, and 5.
+
+For option 2 - ImageOption: 5 or more unique images:
+It can be found in the following location on the index.html doc:
+- lines 76-81 - is my own photo
+It can be found in the following locations on the team.html doc:
+- lines 52, 66, and 81 include my own photos
+It can be found in the following locations on the style-index.css doc:
+- lines 105-117 and 179-181 is the css for my photo on the index.html doc
+
+For option 3 - ResponsiveOption: Response design:
+It can be found in the following locations on the style-index.css doc:
+- lines 1 - 22 are the background image in the header that scales with the size of the window
+- lines 24-37 is the header which changes sizes depending on the size of the window with use of the vw unit on font-size
+- lines 41-61 the nav bar changes sizes and the font size scales with the size of the window with use of the vw unit like in the header
+- lines  174-177 and 197-201 include font changing with the size of the window
+
+For option 5 - MenuOption: Menus/Navigation bars:
+It can be found in the following locations on the index.html doc:
+- lines 58-72 is the html for the navigation bar
+The html is also duplicated to my second page:
+- lines 29-43
+It can be found in the following locations on the style-index.css doc:
+- lines 40-88 is the styling for the navigation bar including hover and active properties.
+ -->
+
+<!-- Doctype and Meta Tags -->
+<!DOCTYPE html>
+<html lang="en"> <!-- declares the language of the webpage -->
+
+<head> <!-- the <head> element is a container for metadata -->
+<title>index.html</title>
+<!-- meta is information about the document, always go inside the <head> -->
+<meta name="viewpoint" content="width=device-width, initial-scale=1"> <!-- setting the viewpoint so it looks good on all devices, w3schools -->
+<meta name="author" content="Hannah Rivet"> <!-- defining the author of the page, me, w3schools -->
+<link rel="stylesheet" type="text/css" href="style-index.css"/> <!-- linking my external css document to this html document, w3schools.com/html/html_css.asp -->
+<link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- linking to favicon, the little image in the browser tab -->
+</head>
+
+
+<!-- Body text and stuff?? -->
+<body> <!-- the <body> element contains all the contents of an HTML document (headings, paragraphs, images, hyperlinks, tables, lists, etc.) -->
+
+<!-- Top top header -->
+<header>
+<div class="backgroundheader1">
+	<div class="header">
+		<h1>Sha'eris</h1>
+		<p>Adventurer of Faerûn.</p>
+	</div>
+</div>
+</header>
+
+<!-- Navigation bar text, https://www.youtube.com/watch?v=e5wjLZzMmYM for html -->
+<div id="navbar">
+  <nav>
+	<ul>
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="team.html">Meet the Team</a>
+		</li>
+		<li>
+			<a href="#disclaimer">Disclaimer</a>
+		</li>
+	</ul>
+  </nav>
+</div>
+
+<!-- Text under navigation bar -->
+<div class="wrapper">
+	<div class="pfp">
+		<img src="me-drawing.png" alt="Drawing of Sha'eris">
+	</div>
+	<div class="pfp_drawing1">
+		<img src="team.png" alt="Drawing of the team">
+	</div>
+	<div class="text-box">
+		<h1> Sha'eris </h1>
+		<h2> Adventurer of Faerûn and Party Leader. </h2>
+		<h3> Somewhere in Faerûn, most recently squatting in the Lower City. </h3>
+		<h4> 'Wild'-ly talented and generally neighbourly, looking for a role as a soldier of fortune in which 
+		I can bring fresh ideas and perspectives while assisting to bring your plans (from world domination to saving a pet) to life! 
+		</h4> <!-- https://resumecat.com/blog/freelance-writer-resume-objectives, resume objective idea/template from here -->
+		<br> <!-- I really needed a break here I'm sorry... -->
+		<p><b> Key Facts: </b></p>
+		<p> Seldarine Drow. </p>
+		<p> Lvl 9 Sorcerer - Wild Magic, Lvl 3 Warlock - The Fiend. </p>
+		<p> Background: Urchin. </p>
+		<p> Patron: The Fiend, likely an Archdevil or Demon Lord. </p>
+		<br>
+		<p><b> Positives: </b></p>
+		<p> Not fully Illithid! </p>
+		<p> Not the evil kind of drow! </p>
+		<p> Have the tendancy to turn people into cats accidentally! </p>
+		<p><b> Negatives: </b></p>
+		<p> Almost Illithid :( </p>
+		<br>
+		<p><b> Experience: </b></p>
+		<p> - Escaped captivity on the Nautiloid led by a group of Illithids/Mind Flayers. </p>
+		<p> - Protected the Emerald Grove (otherwise known as Silvanus' Grove or the Druid's Grove) against the Absolutist-cult-following goblins and restore proper leadership from the corrupt government. </p>
+		<p> - Saved two companions from their cults, neutral-evil aligned deity Shar (also known as the Nightdinger) and evil aligned Vlaakith CLVII (also known as the Lich Queen and ruler of the githyanki race). </p>
+		<p> - Lifted the eternal darkness curse from the Shadowlands </p>
+		<p> - Defeated Ketheric Thorm, a chosen of the deity Myrkul (God of Decay and Exhaustion), and one of Myrkul's physical forms.  </p>
+	</div>
+</div>
+
+<!-- Section disclaimer, https://www.geeksforgeeks.org/how-to-create-links-to-sections-within-the-same-page-in-html/ for html -->
+<div class="disclaimer" id="disclaimer">
+<section>
+	<p>Author: Hannah Rivet</p>
+	<p>Drawn photos are by me, I do not take pride in how they look.</p>
+	<p>Header photos photos are made courtsey of Larian Studios. <a href="https://larian.com/fan-content-policy">Larian Studios - Fan Content Policy</a></p>
+</section>
+</div>
+	
+</body>
+</html>
